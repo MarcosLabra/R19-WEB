@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rosa-vibrante: #E81F76;
+  --azul-profundo: #417099;
+  --cian-vibrante: #00AEC3;
+  --blanco: #FBFBFB;
+  --negro: #111111;
+  --gris-secundario: #EAEAEA;
+  --gris-principal: #2B2B2B;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
