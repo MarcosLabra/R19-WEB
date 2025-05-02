@@ -1,4 +1,12 @@
-.container{
+.container {
+    padding: 24px 50px;
     height: 100vh;
     background-color: var(--blanco);
+
+}
+
+.text {
+    text-align: center;
+    color:var(--gris-principal);
+    margin-bottom: 32px;
 }
