@@ -29,16 +29,14 @@ const Header = () => {
                             animationDuration={0.3}  // Duración de la animación
                         />
                     </div>
-                    {isOpen && (
-                        <nav className={styles.menu}>
-                            <ul>
-                                <li><a href="#tecnologia">Tecnología Educativa en Territorio</a></li>
-                                <li><a href="#dte">DTE</a></li>
-                                <li><a href="#equipo">Equipo</a></li>
-                                <li><a href="#redes">Redes y Testimonios</a></li>
-                            </ul>
-                        </nav>
-                    )}
+                    <nav className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}>
+                        <ul>
+                            <li><a href="#tecnologia">Tecnología Educativa en Territorio</a></li>
+                            <li><a href="#dte">DTE</a></li>
+                            <li><a href="#equipo">Equipo</a></li>
+                            <li><a href="#redes">Redes y Testimonios</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <h2 className={styles.subtitle} >Dirección de Tecnología Educativa</h2>
             </div>
