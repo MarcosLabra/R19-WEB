@@ -11,7 +11,6 @@ const DirectorCard = ({ image, name, subtitle, circleColor }) => {
     <div className="director-card">
       <div className="director-img-wrapper">
         <img src={image} alt={name} className="director-img" />
-        {/* Segundo círculo como subrayado */}
         <div className="subrayado-circular" style={circleStyle}></div>
       </div>
       <h3 className="director-nombre">{name}</h3>

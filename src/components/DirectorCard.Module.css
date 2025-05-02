@@ -12,11 +12,12 @@
 }
 
 .director-img {
-    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    position: relative;   
+    z-index: 2;    
 }
 
 .subrayado-circular {
