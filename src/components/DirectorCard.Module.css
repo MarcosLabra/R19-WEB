@@ -1,0 +1,44 @@
+.director-card {
+    text-align: center;
+    max-width: 200px;
+    margin: 16px;
+}
+
+.director-img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;  /* Para posicionar el subrayado circular relativo a la imagen */
+}
+
+.director-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.subrayado-circular {
+    width: 100px;
+    height: 100px;
+    background-color: var(--rosa-vibrante);  /* Valor predeterminado si no se pasa un color */
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6px;  /* Desplazamiento hacia abajo */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra el círculo respecto a la imagen */
+}
+
+.director-nombre {
+    margin-top: 6px;
+    font-size: 20px;
+    color: var(--cian-vibrante);
+    font-weight: 500;
+}
+
+.director-subtitulo {
+    font-size: 14px;
+    color: var(--gris-principal);
+    font-weight: 400;
+}
