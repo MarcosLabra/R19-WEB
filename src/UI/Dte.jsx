@@ -24,6 +24,7 @@ const Dte = () => {
                 image={Santiago}
                 name="Santiago Albarracín"
                 subtitle="Director de Tecnología Educativa"
+                titleColor="#00AEC3"
                 circleColor="#E81F76"
             />
         </section>

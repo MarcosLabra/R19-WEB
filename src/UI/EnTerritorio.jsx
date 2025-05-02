@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./EnTerritorio.module.css";
-import SectionTitle2lines from "../components/SectionTitle2lines"
+import SectionTitle from "../components/SectionTitle"
 import AccionesCard from '../components/AccionesCard';
 import asistTecnica from '../assets/asistTecnica.png';
 import capDoc from '../assets/capDoc.png';
@@ -21,7 +21,7 @@ const acciones = [
 const EnTerritorio = () => {
     return (
         <section className={styles.container}>
-            <SectionTitle2lines
+            <SectionTitle
                 title="Tecnología Educativa"
                 subtitle="en Territorio"
                 paddingLeft="16px"

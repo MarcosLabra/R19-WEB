@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './SectionTitle2lines.module.css';
+import styles from './SectionTitle.module.css';
 
-const SectionTitle2lines = ({ title, subtitle, paddingLeft = '0px' }) => {
+const SectionTitle = ({ title, subtitle, paddingLeft = '0px' }) => {
     return (
         <div className={styles.wrapper} style={{ paddingLeft }}>
             <h3 className={styles.title}>{title}</h3>
@@ -10,4 +10,4 @@ const SectionTitle2lines = ({ title, subtitle, paddingLeft = '0px' }) => {
     );
 };
 
-export default SectionTitle2lines;
+export default SectionTitle;
