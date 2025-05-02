@@ -12,21 +12,21 @@ const Header = () => {
     };
 
     return (
-        <>
+        <header>
             <div className={styles.container} >
                 <div className={styles.subcontainer}>
                     <div className={styles.header}>
                         <h1 className={styles.title}>R19</h1>
                         <HamburgerMenu
-                            isOpen={isOpen}          // Estado de si está abierto o cerrado
-                            menuClicked={toggleMenu} // Función que cambia el estado
-                            width={30}               // Ancho de las líneas
-                            height={20}              // Altura de las líneas
-                            strokeWidth={4}          // Grosor de las líneas
-                            rotate={0}               // Rotación al abrir (puedes ajustarlo)
-                            color="#fbfbfb"            // Color del ícono
-                            borderRadius={2}         // Sin bordes redondeados
-                            animationDuration={0.3}  // Duración de la animación
+                            isOpen={isOpen}
+                            menuClicked={toggleMenu}
+                            width={30}
+                            height={20}
+                            strokeWidth={4}
+                            rotate={0}
+                            color="#fbfbfb"
+                            borderRadius={2}
+                            animationDuration={0.3}
                         />
                     </div>
                     <nav className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}>
@@ -38,10 +38,10 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <h2 className={styles.subtitle} >Dirección de Tecnología Educativa</h2>
+                <h2 className={styles.subtitle}>Dirección de Tecnología Educativa</h2>
             </div>
-        </>
+        </header>
     );
-}
+};
 
 export default Header;
