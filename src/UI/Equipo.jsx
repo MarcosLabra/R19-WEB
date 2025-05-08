@@ -44,6 +44,7 @@ const Equipo = () => {
 
       <div style={{ margin: "24px 0" }}>
         <Swiper
+          className={styles.swiperContainer}
           modules={[Autoplay, Pagination]}
           spaceBetween={0}
           slidesPerView={2}
@@ -79,11 +80,14 @@ const Equipo = () => {
         subtitle=""
         paddingLeft="16px"
       />
-      <EquipoCard
-        nombre={"medios escolares"}
-        rol={"facilitador"}
-        foto={fotoM}
-      />
+      <div className={styles.mediosContainer}>
+        <EquipoCard
+          nombre={"medios escolares"}
+          rol={"facilitador"}
+          foto={fotoM}
+        />
+      </div>
+
     </section>
   );
 };
