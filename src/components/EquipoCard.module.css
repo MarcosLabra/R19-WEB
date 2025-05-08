@@ -1,0 +1,41 @@
+.card {
+  width: 140px;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  background-color: var(--blanco);
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid transparent;
+  border-radius: 50%;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  background-color: #3b6b9d;
+  color: var(--blanco);
+  font-size: 20px;
+  padding: 4px;
+  font-weight: 500;
+}
+
+.nombre p {
+  width: 80%;
+}
+
+.rol {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gris-principal);
+}
