@@ -11,8 +11,6 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
-
 const equipo = [
   { nombre: 'Marcos Labra', rol: 'Facilitador', genero: 'M' },
   { nombre: 'Jennifer Pacheco', rol: 'Facilitador', genero: 'F' },
@@ -42,21 +40,21 @@ const Equipo = () => {
           titleColor="#fbfbfb"
           circleColor="#417099"
         />
-
       </div>
+
       <div style={{ margin: "24px 0" }}>
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={0}
           slidesPerView={2}
-          centeredSlides={true}
+          centeredSlides={false}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
-            dynamicBullets: true, // opcional: puntitos animados
+            dynamicBullets: true,
           }}
           breakpoints={{
             768: {
@@ -76,8 +74,6 @@ const Equipo = () => {
         </Swiper>
       </div>
 
-
-
       <SectionTitle
         title="Medios Escolares"
         subtitle=""
@@ -88,7 +84,6 @@ const Equipo = () => {
         rol={"facilitador"}
         foto={fotoM}
       />
-
     </section>
   );
 };
