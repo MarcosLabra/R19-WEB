@@ -1,0 +1,38 @@
+.boton {
+    margin: 24px;
+    width: 223px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(45deg, var(--rosa-vibrante), var(--azul-profundo), var(--cian-vibrante)); /* Degradado 45° */
+    color: var(--gris-principal);
+    z-index: 0;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.boton::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background-color: var(--gris-secundario);
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    z-index: -1;
+}
+
+.boton:hover{
+    color: var(--rosa-vibrante);
+}

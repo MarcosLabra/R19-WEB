@@ -1,5 +1,6 @@
 import Cover from './UI/Cover'
 import Dte from './UI/Dte'
+import DteActividades from './UI/DteActividades'
 import EnTerritorio from './UI/EnTerritorio'
 import Equipo from './UI/Equipo'
 import Instagram from './UI/Instagram'
@@ -14,6 +15,7 @@ function App() {
       <Equipo />
       <Instagram />
       <Testimonios />
+      <DteActividades />
     </>
   )
 }

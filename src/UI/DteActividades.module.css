@@ -1,0 +1,25 @@
+.sectionContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blanco);
+}
+
+.botonContainer {
+    padding: 34px;
+    background-color: var(--gris-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.iconContainer{
+    width: 100%;
+    display: flex;
+    margin: 16px;
+    justify-content: space-evenly;
+}
