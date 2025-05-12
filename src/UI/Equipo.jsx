@@ -1,4 +1,4 @@
-import React from 'react';
+
 import SectionTitle from '../components/SectionTitle';
 import styles from './Equipo.module.css';
 import DirectorCard from '../components/DirectorCard';

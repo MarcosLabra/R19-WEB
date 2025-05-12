@@ -1,12 +1,17 @@
+import styles from './InstagramFeed.module.css';
+
 const InstagramFeed = () => {
-    return (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://snapwidget.com/embed/123456" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:500px"></iframe>`
-        }}
-      />
-    );
-  };
-  
-  export default InstagramFeed;
-  
+  return (
+    <div className={styles.wrapper}>
+      <iframe
+        src="https://snapwidget.com/embed/1095840"
+        className={styles.iframeContainer}
+        allowTransparency="true"
+        frameBorder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+  );
+};
+
+export default InstagramFeed;

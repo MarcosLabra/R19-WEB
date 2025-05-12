@@ -2,3 +2,7 @@
     padding: 32px;
     background-color: var(--cian-vibrante);
 }
+
+.swiperContainer{
+  height: 340px;
+}
