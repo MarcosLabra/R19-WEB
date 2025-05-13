@@ -2,39 +2,26 @@ import React from 'react'
 import styles from "./EnTerritorio.module.css";
 import SectionTitle from "../components/SectionTitle"
 import AccionesCard from '../components/AccionesCard';
-import asistTecnica from '../assets/asistTecnica.png';
-import capDoc from '../assets/capDoc.png';
-import cdt from '../assets/cdt.png';
-import medios from '../assets/medios.png';
-import proyEsc from '../assets/proyEsc.png';
-
-const acciones = [
-    { image: cdt, title: 'Clubes de Tecnología', link: '' },
-    { image: capDoc, title: 'Capacitación Docente', link: '' },
-    { image: proyEsc, title: 'Proyectos Escolares', link: '' },
-    { image: medios, title: 'Medios Escolares', link: '' },
-    { image: asistTecnica, title: 'Asistencia Técnica', link: '' },
-];
-
-
+import accionesData from '../data/accionesData';
 
 const EnTerritorio = () => {
     return (
-        <section id="enTerritorio"className={styles.container}>
+        <section id="enTerritorio" className={styles.container}>
             <SectionTitle
                 title="Tecnología Educativa"
                 subtitle="en Territorio"
                 paddingLeft="16px"
             />
             <div className={styles.cardContainer}>
-                {acciones.map((accion, index) => (
+                {accionesData.map((accion, index) => (
                     <AccionesCard
                         key={index}
                         image={accion.image}
                         title={accion.title}
-                        link={accion.link}
+                        link={`/acciones/${accion.id}`}
                     />
                 ))}
+
             </div>
 
         </section>

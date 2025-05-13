@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './AccionesCard.module.css';
-import { ArrowRight } from 'lucide-react'; // Usando ícono de flecha
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AccionesCard = ({ image, title, link }) => {
     return (
-        <a href={link} className={styles.card} target="_blank" rel="noopener noreferrer">
+        <Link to={link} className={styles.card}>
             <img src={image} alt={title} className={styles.image} />
             <div className={styles.footer}>
                 <span className={styles.title}>{title}</span>
@@ -12,7 +13,7 @@ const AccionesCard = ({ image, title, link }) => {
                     <ArrowRight size={24} color="#fbfbfb" />
                 </div>
             </div>
-        </a>
+        </Link>
     );
 };
 
