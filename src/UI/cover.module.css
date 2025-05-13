@@ -1,15 +1,22 @@
 .container {
-    width: 100vw;
-    height: 95vh;
-    padding: 16px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  width: 100vw;
+  height: 95vh;
+  padding: 16px;
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Necesario para que el logo absolute funcione */
+  overflow: hidden;
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo {
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }

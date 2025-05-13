@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./cover.module.css"
 import bgCover from "../assets/BG-Cover.png"
 import logoPbaCover from "../assets/logo-pba-cover.png"
