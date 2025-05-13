@@ -25,7 +25,7 @@ const equipo = [
 
 const Equipo = () => {
   return (
-    <section className={styles.container}>
+    <section id="equipo" className={styles.container}>
       <SectionTitle
         title="Equipo"
         subtitle="en la región"

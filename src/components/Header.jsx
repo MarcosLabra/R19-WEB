@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import styles from "./header.module.css";
 import HamburgerMenu from 'react-hamburger-menu';
+import { useEffect, useState } from 'react';
 
 // Definir el componente MenuHamburguesa
 const Header = () => {
@@ -15,7 +15,9 @@ const Header = () => {
         <header className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.header}>
-                    <h1 className={styles.title}>R19</h1>
+                    <a href="#cover" onClick={() => setIsOpen(false)} className={styles.r19}>
+                        <h1 className={styles.title}>R19</h1>
+                    </a>
                     <HamburgerMenu
                         isOpen={isOpen}
                         menuClicked={toggleMenu}
@@ -30,14 +32,16 @@ const Header = () => {
                 </div>
                 <nav className={`${styles.menu} ${isOpen ? styles.open : styles.closed}`}>
                     <ul>
-                        <li><a href="#tecnologia">Tecnología Educativa en Territorio</a></li>
-                        <li><a href="#dte">DTE</a></li>
-                        <li><a href="#equipo">Equipo</a></li>
-                        <li><a href="#redes">Redes y Testimonios</a></li>
+                        <li><a href="#enTerritorio" onClick={() => setIsOpen(false)}>Tecnología Educativa en Territorio</a></li>
+                        <li><a href="#dte" onClick={() => setIsOpen(false)}>DTE</a></li>
+                        <li><a href="#equipo" onClick={() => setIsOpen(false)}>Equipo</a></li>
+                        <li><a href="#instagram" onClick={() => setIsOpen(false)}>Redes y Testimonios</a></li>
                     </ul>
                 </nav>
             </div>
-            <h2 className={styles.subtitle}>Dirección de Tecnología Educativa</h2>
+            <h2 className={styles.subtitle}>
+                Dirección de Tecnología Educativa
+            </h2>
         </header>
     );
 };

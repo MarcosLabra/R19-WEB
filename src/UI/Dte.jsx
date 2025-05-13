@@ -5,7 +5,7 @@ import Santiago from "../assets/santiago.png"
 
 const Dte = () => {
     return (
-        <section className={styles.container}>
+        <section id="dte" className={styles.container}>
 
             <p className={styles.text}>
                 <strong>La Dirección de Tecnología Educativa (DTE)</strong> tiene como objetivo principal la democratización y sostenibilidad del acceso a la tecnología educativa.

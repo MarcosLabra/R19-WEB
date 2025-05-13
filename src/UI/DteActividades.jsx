@@ -16,7 +16,7 @@ const botones = [
 
 const DteActividades = () => {
     return (
-        <section className={styles.sectionContainer}>
+        <section id="dteActividades" className={styles.sectionContainer}>
             <div className={styles.botonContainer}>
                 {botones.map((boton, index) => (
                     <BotonDte key={index} titulo={boton.titulo} link={boton.link} />

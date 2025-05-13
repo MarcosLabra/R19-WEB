@@ -6,7 +6,7 @@ import Header from '../components/Header'
 
 const Cover = () => {
     return (
-        <section className={styles.container} style={{ backgroundImage: `url(${bgCover})` }}>
+        <section id="cover" className={styles.container} style={{ backgroundImage: `url(${bgCover})` }}>
             <Header />
             <div className={styles.logoContainer}>
                 <img src={logoPbaCover} alt="Logo PBA" className={styles.logo} />

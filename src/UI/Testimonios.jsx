@@ -16,7 +16,7 @@ const testimonios = Array.from({ length: 10 }).map((_, index) => ({
 
 const Testimonios = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="testimonios" className={styles.sectionContainer}>
 
       <div style={{ margin: '24px 0' }}>
         <Swiper

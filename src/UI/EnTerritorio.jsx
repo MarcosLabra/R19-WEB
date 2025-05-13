@@ -20,7 +20,7 @@ const acciones = [
 
 const EnTerritorio = () => {
     return (
-        <section className={styles.container}>
+        <section id="enTerritorio"className={styles.container}>
             <SectionTitle
                 title="Tecnología Educativa"
                 subtitle="en Territorio"
