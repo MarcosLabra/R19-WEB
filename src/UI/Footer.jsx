@@ -13,7 +13,6 @@ const Footer = () => {
 
             <div className={styles.contact}>
                 <p><strong>Correo Electrónico:</strong><br />region19dte@abc.gob.ar</p>
-                <p><strong>Teléfono:</strong><br />(223) 525-1586</p>
             </div>
 
             <div className={styles.icons}>
