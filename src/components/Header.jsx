@@ -1,6 +1,6 @@
 import styles from "./header.module.css";
 import HamburgerMenu from 'react-hamburger-menu';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 // Definir el componente MenuHamburguesa
 const Header = () => {
@@ -17,6 +17,9 @@ const Header = () => {
                 <div className={styles.header}>
                     <a href="#cover" onClick={() => setIsOpen(false)} className={styles.r19}>
                         <h1 className={styles.title}>R19</h1>
+                        <h2 className={styles.subtitle}>
+                            Dirección de Tecnología Educativa
+                        </h2>
                     </a>
                     <HamburgerMenu
                         isOpen={isOpen}
@@ -39,9 +42,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <h2 className={styles.subtitle}>
-                Dirección de Tecnología Educativa
-            </h2>
+
         </header>
     );
 };

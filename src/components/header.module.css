@@ -2,6 +2,7 @@
     width: 90%;
     position: fixed;
     z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .subcontainer {
@@ -79,8 +80,4 @@
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    margin-left: 2px;
-    margin-top: 4px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.4);
-
 }

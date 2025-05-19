@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import accionesData from '../data/accionesData';
 import styles from './AccionDetalle.module.css';
@@ -8,6 +9,11 @@ import Header from '../components/Header';
 const AccionDetalle = () => {
     const { accionId } = useParams();
 
+    // 🔥 Forzar scroll al tope al montar el componente
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const accion = accionesData.find(item => item.id === accionId);
 
     if (!accion) {
@@ -17,11 +23,11 @@ const AccionDetalle = () => {
     return (
         <>
             <div className={styles.pageContainer}>
-                <Header />
-                <div className={styles.Container}>
+                <Header highlightSubtitle />
+
+                <div className={styles.container}>
                     <h1 className={styles.title}>{accion.title}</h1>
 
-                    {/* Imagen con fondo detrás */}
                     <div className={styles.imageWrapper}>
                         <div className={styles.backgroundBox}></div>
                         <img src={accion.image} alt={accion.title} className={styles.image} />
